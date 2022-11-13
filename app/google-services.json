@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "833971665940",
+    "project_id": "humane-heart",
+    "storage_bucket": "humane-heart.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:833971665940:android:0a9a606f2c6c4213cf3b01",
+        "android_client_info": {
+          "package_name": "com.harye.humaneheart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "833971665940-jl4g2sjhrrqp363o32bga5ac66dht790.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.harye.humaneheart",
+            "certificate_hash": "376de1ad64d4a62d8a3626f690c942f69212acaf"
+          }
+        },
+        {
+          "client_id": "833971665940-ojtr1lpsacf3e3g7jqcekl0u4p00q6ol.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYk_7Zoq0cAXAFfAiuDfC07C6YXnOK_Zs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "833971665940-ojtr1lpsacf3e3g7jqcekl0u4p00q6ol.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

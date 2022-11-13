@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Humane Heart</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_new_event">Add new Event</string>
+    <string name="event_name_req">Event Name <font color='#FF0000'>*</font></string>
+    <string name="event_date_req">Event Date <font color='#FF0000'>*</font></string>
+    <string name="event_description_req">Event Description <font color='#FF0000'>*</font></string>
+    <string name="event_whatsapp_link_req">Event Whatsapp Link <font color='#FF0000'>*</font></string>
+    <string name="event_organizer_phone_req">Event Organizer Phone Number<font color='#FF0000'>*</font></string>
+    <string name="event">Event</string>
+    <string name="error_field_required">All Fields Required </string>
+    <string name="event_description">Event Description</string>
+    <string name="add_fragment_title">Add Event</string>
+    <string name="save_action">Save</string>
+    <string name="event_image">event_image</string>
+    <string name="events">Events</string>
+    <string name="add_event">Add Event</string>
+    
+    <string name="event_added">Event Successfully Added</string>
+    <string name="error">Error: %1$s</string>
+
+</resources>
