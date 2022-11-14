@@ -10,5 +10,5 @@ class Event(
 //    var eventDate: Date? = null,          /* To check later how to push dates */
     var eventDescription: String? = null,
     var whatsAppLink: String? = null,
-    var OrganizerPhone: String? = null
+    var organizerPhone: String? = null
 )

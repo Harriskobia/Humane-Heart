@@ -11,7 +11,8 @@ class EventViewModel : ViewModel() {
 
     private val _result = MutableLiveData<Exception?>()
     val result: LiveData<Exception?>
-        get() = result
+        get() = _result
+
 
     fun addEvent(event: Event) {
         val dbEvents = FirebaseDatabase.getInstance().getReference(NODE_EVENTS)
@@ -24,6 +25,5 @@ class EventViewModel : ViewModel() {
                     _result.value = it.exception
                 }
             }
-
     }
 }

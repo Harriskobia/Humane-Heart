@@ -9,14 +9,13 @@
     <string name="event_whatsapp_link_req">Event Whatsapp Link <font color='#FF0000'>*</font></string>
     <string name="event_organizer_phone_req">Event Organizer Phone Number<font color='#FF0000'>*</font></string>
     <string name="event">Event</string>
-    <string name="error_field_required">All Fields Required </string>
+    <string name="error_field_required">All Fields Required and phone number should be less than 10 digits </string>
     <string name="event_description">Event Description</string>
     <string name="add_fragment_title">Add Event</string>
     <string name="save_action">Save</string>
     <string name="event_image">event_image</string>
     <string name="events">Events</string>
     <string name="add_event">Add Event</string>
-    
     <string name="event_added">Event Successfully Added</string>
     <string name="error">Error: %1$s</string>
 

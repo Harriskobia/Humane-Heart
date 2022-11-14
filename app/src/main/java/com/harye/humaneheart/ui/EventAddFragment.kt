@@ -27,7 +27,7 @@ class EventAddFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        viewModel = ViewModelProviders.of(this).get(EventViewModel::class.java)
+        viewModel = ViewModelProviders.of(this)[EventViewModel::class.java]
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_event_add, container, false)
     }
@@ -36,17 +36,18 @@ class EventAddFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        // Observe result
         viewModel.result.observe(viewLifecycleOwner, Observer {
-
-            val message = if (it == null) {
+            val message = if (it == null){
                 getString(R.string.event_added)
-            } else {
+            }else{
                 getString(R.string.error, it.message)
             }
+            Toast.makeText(requireContext(),message,Toast.LENGTH_SHORT).show()
+
+            // Go back to eventList
             val action = EventAddFragmentDirections.actionEventAddFragmentToEventListFragment()
             findNavController().navigate(action)
-            Toast.makeText(requireContext(), message, Toast.LENGTH_SHORT).show()
+
         })
 
         save_action.setOnClickListener {
@@ -55,25 +56,21 @@ class EventAddFragment : Fragment() {
             val whatsAppLink = event_whatsapp_link.text.toString().trim()
             val organizerTel = event_organizer_phone.text.toString().trim()
 
-            if (name.isEmpty() || description.isEmpty() || whatsAppLink.isEmpty()
-                || (organizerTel.isEmpty() || organizerTel.length > 10)
-            ) {
+            if (name.isEmpty() || description.isEmpty() || whatsAppLink.isEmpty() || (organizerTel.isEmpty() || organizerTel.length > 10)) {
                 Toast.makeText(
                     requireContext(),
                     getString(R.string.error_field_required),
                     Toast.LENGTH_SHORT
                 ).show()
-                return@setOnClickListener /* Stop further Execution*/
+                return@setOnClickListener
             }
+
             val event = Event()
             event.eventName = name
             event.eventDescription = description
             event.whatsAppLink = whatsAppLink
-            event.OrganizerPhone = organizerTel
-
+            event.organizerPhone = organizerTel
             viewModel.addEvent(event)
         }
-
     }
-
 }

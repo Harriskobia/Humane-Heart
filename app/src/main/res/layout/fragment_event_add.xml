@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#16EC1F"
+    android:id="@+id/input_layout_name"
     tools:context=".ui.EventAddFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -18,6 +19,7 @@
             android:layout_width="0dp"
             android:layout_height="200dp"
             android:layout_marginTop="24dp"
+            android:scaleType="fitXY"
             android:contentDescription="@string/event_image"
             android:src="@drawable/ic_add_photo"
             app:layout_constraintEnd_toEndOf="parent"
